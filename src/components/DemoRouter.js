@@ -9,6 +9,7 @@ import {
   useParams,
   Redirect,
 } from "react-router-dom";
+import CrudDemo from "./CrudDemo";
 
 const DemoRouter = () => {
   return (
@@ -20,7 +21,10 @@ const DemoRouter = () => {
           <Route path="/welcome" component={Welcome} />
           <Route path="/home" component={Home} />
           <Route path="/person" component={Person} />
-
+          <Route path="/crud">
+            {" "}
+            <CrudDemo />{" "}
+          </Route>
           <Route path="/about" component={About} />
           <Redirect to="/home" />
         </Switch>
@@ -56,6 +60,12 @@ const Header = () => {
                   Person
                 </Link>
               </li>
+              <li class="nav-item">
+                <Link className="nav-link" to="/crud">
+                  Crud
+                </Link>
+              </li>
+
               <li class="nav-item">
                 <Link className="nav-link" to="/about">
                   About
