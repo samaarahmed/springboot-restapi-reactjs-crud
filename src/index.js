@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css'
 
-const msg = <h2>Hello to react</h2>
-ReactDOM.render(msg, document.getElementById('root'));
+import DemoRouter from './components/DemoRouter';
+
+
+
+//const msg = <h2>Hello to react</h2>
+ReactDOM.render(<DemoRouter/>, document.getElementById('root'));
 
 
 
